@@ -23,11 +23,22 @@
 
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Poppins:300,400,500,600,700');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
  body {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: #3333;
+	font-size: 16px;
 	font-style: normal;
+}
+
+/* fonts family */
+.poppins{
+	font-family: 'Poppins', sans-serif;
+}
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
 }
 .img {
 	max-width: 100%;
@@ -49,11 +60,16 @@ a,
 	-ms-transition: all 0.3s ease-out 0s;
 	-o-transition: all 0.3s ease-out 0s;
 	transition: all 0.3s ease-out 0s;
+	text-decoration: none;
 }
 a:focus,
 .button:focus {
 	text-decoration: none;
 	outline: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
 }
 a:focus,
 a:hover,
@@ -74,18 +90,17 @@ button:focus,input:focus,input:focus,textarea,textarea:focus{outline: 0}
 .capitalize {
 	text-transform: capitalize;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: 'Poppins', sans-serif;
-	font-weight: normal;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
 	color: #313131;
 	margin-top: 0px;
-	font-style: normal;
-	font-weight: 400;
 	text-transform: normal;
 }
 h1 a,
@@ -252,6 +267,58 @@ label {
 #scrollUp:hover {
 	background: #444;
 }
+
+
+/*  main css start */
+
+/* section heading */
+/* 
+1.top header area
+
+
+
+
+
+*/
+
+
+/* top header  section area start */
+.language span, .language a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+}
+.language a{
+	margin-left: 20px;
+}
+.social-icon a {
+    color: #fff;
+    margin-left: 20px;
+}
+.main-menu  li {
+    display: inline-block;
+	margin-left: 10px;
+	position: relative;
+	z-index: 1;
+}
+.main-menu  li::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 1px;
+	width: 100%;
+	background: #1696e7;
+
+}
+.main-menu li a {
+    display: block;
+    padding: 45px 10px;
+	color: #333;
+	font-family: 'Montserrat', sans-serif;
+}
+/* top header  section area end */
 
 
 
